@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Assignment</title>    
+</head>
+<body>
+    <center><img src="./saylani-welfare.jpg" alt="Error" style="width: 60%; height:200px;"></center>
+    <h1 align="center" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Saylani Online Academy</h1>
+    <form action="./successfully.html" method="get">
+        <div align="center">
+            <fieldset align="center" style="width: 500px; background-color: rgb(182, 169, 169);">
+                <h2><legend align="center"><b>Students Registration Form</b></legend></h2>
+                <table>
+            <tr>
+                <td><label for="name"><b>Name:</b></label></td>
+                <td><input type="text" id="name" size="30" required name="name" placeholder="Enter Your Name" minlength="5" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="fname"><b>Father Name:</b></label></td>
+                <td><input type="text" id="fname" size="30" required name="fname" placeholder="Enter Your Father Name" minlength="5" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="password"><b>Password:</b> </label></td>
+                <td><input type="password" required name="password" id="password" placeholder="Enter Your Password" minlength="4" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="Address"><b>Address:</b> </label></td>
+                <td><textarea name="address" id="address" required placeholder="Address" cols="20" rows="05"></textarea></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="gender"><B>Gender:</B></label></td>
+                <td><input type="radio" name="gender" id="male" value="male" required> 
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" required> 
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="Other" value="Other" required> 
+                        <label for="Other">Other</label></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="languages"><b>Languages:</b></label></td>
+                <td>
+                    <input type="checkbox" name="Urdu">Urdu
+                    <input type="checkbox" name="English">English
+                    <input type="checkbox" name="Arabic">Arabic
+                    <input type="checkbox" name="Chinese">Chinese
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="DOB"><B>DOB:</B></label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><LABel><b>Email ID:</b></LABel></td>
+                <td><input type="email" size="20" required name="Password" id="email" placeholder="Email-ID" minlength="8" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><label for="Mobile no"><b>Mobile Number: </b></label></td>
+                <td><input type="text" placeholder="Mobile Number" size="20" required name="number" minlength="11" maxlength="16" ></td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"><label for="select city"><B>Select City: &emsp;</B></label></td>
+                <td>
+                    <select name="city" id="" required>
+                        <option value="" selected disabled>Select City</option>
+                        <option value="Karachi" align="center">Karachi</option>
+                        <option value="Hyderabad" align="center">Hyderabad</option>
+                        <option value="Faislabad" align="center">Faislabad</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:5px;"><LAbel><b>Hobbies:</b></LAbel></td>
+                <td>
+                    <select name="" id="" multiple="multiple">
+                        <option value="Select Hobby" selected disabled>Select Hobby</option>
+                        <option value="cricket">cricket</option>
+                        <option value="tenes">Tenes</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                    </select>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><b>Picture Upload: </b></td>
+                <td><input type="file" name="" id="" accept="images/*">
+                </td>
+                <td>
+                    <input type="button" value="Upload">
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                       <input type="submit" value="Submit Form">
+                   </td>
+            </tr>
+          </table>
+          </fieldset>
+
+        </div>
+        <div style="border: 2px solid purple; display:inline-block;">
+            <p><strong>Made by: Fahad Ahmed</strong></p>
+        </div>
+    </form>
+</body>
+</html>
